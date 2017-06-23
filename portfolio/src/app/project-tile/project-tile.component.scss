@@ -1,0 +1,29 @@
+@import '../variables.scss';
+.main-wrapper{
+    padding: 10px;
+    margin: 5px;
+    background-color: $mainBgColor;
+    color: $mainColor;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row-tile{
+    display: flex;
+    background-color: $secondaryBgColor;
+    border-radius: 10px;
+}
+.row{
+    width: 100%;
+    text-align: center;
+    color: $secondaryColor;
+}
+.row-tile .imageDiv, .row-tile .content{
+    flex :1 1 auto;
+}
+.row-tile div p.content{
+    padding: 20px;
+}
+.row-tile div img{
+    height: 300px;
+}

@@ -1,0 +1,25 @@
+@import '../variables.scss';
+nav{
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 999;
+    display: flex;
+    color: $mainColor;
+}
+.navIcons{
+    width: 50px;
+    background-color: #222;
+}
+
+nav{
+    background-color: transparent;
+    border: none;
+}
+
+.showOnHover li{
+    height: 50px;
+    line-height: 20px;
+    padding: 10px 15px;
+    background-color: #222;
+}

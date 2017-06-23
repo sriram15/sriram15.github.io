@@ -1,0 +1,14 @@
+<div class="container">
+  <h4>Filter</h4>
+  <div class="btn-group" role="group" aria-label="Filters">
+    <button type="button" class="btn btn-secondary" [class.btn-primary]="currentFilter.category==''" (click)="filterClicked('all')">All</button>
+    <button type="button" class="btn btn-secondary" [class.btn-primary]="currentFilter.category=='web'" (click)="filterClicked('web')">Web</button>
+    <button type="button" class="btn btn-secondary" [class.btn-primary]="currentFilter.category=='mobile'" (click)="filterClicked('mobile')">Mobile</button>
+    <button type="button" class="btn btn-secondary" [class.btn-primary]="currentFilter.category=='3d'" (click)="filterClicked('3d')">3D</button>
+    <button type="button" class="btn btn-secondary" [class.btn-primary]="currentFilter.category=='photoshop'" (click)="filterClicked('photoshop')">Photoshop</button>
+  </div>
+
+  <div>
+    <project-tile *ngFor="let ar of allProject | projtypfilter: currentFilter : filterChanged;let odd=odd;" [side]="odd==true?'left':'right'" [src]="ar.srcUrl"></project-tile>
+  </div>
+</div>
