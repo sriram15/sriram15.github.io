@@ -1,3 +1,4 @@
+import { AngularFireDatabase } from 'angularfire2/database';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -15,6 +16,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectService } from "app/providers/project/project.service";
 import { ProjtypfilterPipe } from "app/pipe/projtypfilter.pipe";
 import { NavComponent } from './nav/nav.component';
+import { AngularFireModule } from 'angularfire2';
+import {firebaseConfig} from '../environments/firebaseConfig'
 
 @NgModule({
   declarations: [
@@ -31,9 +34,10 @@ import { NavComponent } from './nav/nav.component';
     FormsModule,
     HttpModule,
     CarouselModule.forRoot(),
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
-  providers: [ProjectService],
+  providers: [ProjectService, AngularFireDatabase],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
