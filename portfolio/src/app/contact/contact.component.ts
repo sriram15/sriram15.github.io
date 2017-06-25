@@ -9,6 +9,7 @@ import {AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database
 export class ContactComponent implements OnInit {
 
   private contact = {name: '', email: '', message:''}
+  private successMsg: boolean = false;
   constructor(private af: AngularFireDatabase) { }
 
 
@@ -16,7 +17,9 @@ export class ContactComponent implements OnInit {
   }
 
   addMessage(contact){
-    this.af.database.ref('messages').push(contact);  
+    this.af.database.ref('messages').push(contact);
+    this.contact.email = this.contact.name = this.contact.message = '';
+    this.successMsg = true;
   }
 
 }
