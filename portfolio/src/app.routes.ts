@@ -6,6 +6,4 @@ import { PortfolioComponent } from "app/portfolio/portfolio.component";
 export const routes:Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full' },
     {path: 'home', component : HomeComponent },
-    {path: 'contact', component : ContactComponent},
-    {path: 'portfolio', component: PortfolioComponent}
     ];

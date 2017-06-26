@@ -18,7 +18,6 @@ import { ProjtypfilterPipe } from "app/pipe/projtypfilter.pipe";
 import { NavComponent } from './nav/nav.component';
 import { AngularFireModule } from 'angularfire2';
 import {firebaseConfig} from '../environments/firebaseConfig'
-import {ToastyModule} from 'ng2-toasty';
 
 @NgModule({
   declarations: [
@@ -36,7 +35,6 @@ import {ToastyModule} from 'ng2-toasty';
     HttpModule,
     CarouselModule.forRoot(),
     RouterModule.forRoot(routes),
-    ToastyModule.forRoot(),
     AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [ProjectService, AngularFireDatabase],

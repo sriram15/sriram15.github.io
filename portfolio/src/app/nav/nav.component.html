@@ -2,13 +2,17 @@
   <ul class="nav navbar-nav navIcons">
     <li (mouseenter)="mouseover='home'" (mouseleave)="mouseover=''" routerLinkActive="active"><a routerLink="/home"><span class="glyphicon glyphicon-home"></span></a></li>
     <li (mouseenter)="mouseover='portfolio'" (mouseleave)="mouseover=''"><a routerLink="/portfolio"><span class="glyphicon glyphicon-film"></span></a></li>
-    <li (mouseenter)="mouseover='skill'" (mouseleave)="mouseover=''"><a routerLink="/skills"><span class="glyphicon glyphicon-briefcase"></span></a></li>
-    <li (mouseenter)="mouseover='contact'" (mouseleave)="mouseover=''"><a routerLink="/contact"><span class="glyphicon glyphicon-film"></span></a></li>
   </ul>
   <ul *ngIf="mouseover!=''" class="nav navbar-nav showOnHover">
     <li *ngIf="mouseover==='home'" class="glyphicon">Home</li>
     <li style="margin-top:44px" *ngIf="mouseover==='portfolio'" class="glyphicon">Portfolio</li>
-    <li style="margin-top:95px" *ngIf="mouseover==='skill'" class="glyphicon">Skill</li>
-    <li style="margin-top:142px" *ngIf="mouseover==='contact'" class="glyphicon">Contact</li>
   </ul>
 </nav>
+<div class="contactButton">
+  <button class="btn btn-primary" name="contactMenu" (click)="contactMenuOpen = !contactMenuOpen">Contact</button>
+  <div *ngIf="contactMenuOpen" class="rightSideBar">
+    <button class="btn btn-primary" name="contactMenu" (click)="contactMenuOpen = !contactMenuOpen">close</button>
+    <app-contact></app-contact>
+  </div>
+</div>
+

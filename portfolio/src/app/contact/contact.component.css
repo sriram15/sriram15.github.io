@@ -1,0 +1,8 @@
+div.container{
+    padding: 5px;
+}
+
+form div.form-group{
+    width: 350px;
+    padding: 10px;
+}

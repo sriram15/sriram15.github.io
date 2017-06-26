@@ -7,6 +7,27 @@ nav{
     display: flex;
     color: $mainColor;
 }
+.rightSideBar{
+    position: fixed;
+    right: 0%;
+    width: 400px;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 999;
+    display: flex;
+    background-color: $mainBgColor;
+    color: $mainColor;
+}
+
+.contactButton{
+    position: fixed;
+    right: 0%;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 999;
+}
+
+
 .navIcons{
     width: 50px;
     background-color: #222;
