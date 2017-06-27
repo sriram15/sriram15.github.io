@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'project-tile',
@@ -8,10 +9,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ProjectTileComponent implements OnInit {
 
   @Input() side: string;
-  @Input() src: string;
-  constructor() { }
+  @Input() project;
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  viewMore(){
+    this.router.navigate(['/project', this.project.id])
   }
 
 }

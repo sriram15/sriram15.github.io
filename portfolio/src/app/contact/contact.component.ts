@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database';
-import {ToastyService, ToastyConfig, ToastOptions} from 'ng2-toasty';
 
 @Component({
   selector: 'app-contact',

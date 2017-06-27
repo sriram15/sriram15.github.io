@@ -9,6 +9,6 @@
   </div>
 
   <div>
-    <project-tile *ngFor="let ar of allProject | projtypfilter: currentFilter : filterChanged;let odd=odd;" [side]="odd==true?'left':'right'" [src]="ar.srcUrl"></project-tile>
+    <project-tile *ngFor="let ar of allProject | projtypfilter: currentFilter : filterChanged;let odd=odd;" [side]="odd==true?'left':'right'" [project]="ar"></project-tile>
   </div>
 </div>

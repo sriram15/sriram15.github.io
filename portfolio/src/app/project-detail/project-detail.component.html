@@ -1,0 +1,21 @@
+<div class="container">
+  <div style="text-align:center">
+    <h4>{{project.title}}</h4>
+    <h5>{{project.toolsUsed}}</h5>
+  </div>
+
+  <div>
+    <img [src]="project.srcUrl" />
+  </div>
+
+  <div>
+    <p>{{project.description}}</p>
+  </div>
+
+  <div *ngFor="let block of project.infoBlocks">
+    <img *ngIf="block.imgUrl" [src]="block.imgUrl">
+    <p>{{block.content}}</p>
+  </div>
+</div>
+
+

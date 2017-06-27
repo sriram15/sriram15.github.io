@@ -17,7 +17,9 @@ import { ProjectService } from "app/providers/project/project.service";
 import { ProjtypfilterPipe } from "app/pipe/projtypfilter.pipe";
 import { NavComponent } from './nav/nav.component';
 import { AngularFireModule } from 'angularfire2';
-import {firebaseConfig} from '../environments/firebaseConfig'
+import {firebaseConfig} from '../environments/firebaseConfig';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { NotFoundComponent } from './not-found/not-found.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import {firebaseConfig} from '../environments/firebaseConfig'
     ProjectTileComponent,
     PortfolioComponent,
     ProjtypfilterPipe,
-    NavComponent
+    NavComponent,
+    ProjectDetailComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
