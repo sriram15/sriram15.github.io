@@ -7,18 +7,21 @@ import { Http } from "@angular/http";
 @Injectable()
 export class ProjectService {
 
-  private projects: Project[] = []
+  private projects: Project[] = null;
   constructor(private http: Http) {
-    this.http.get('../assets/projects.json')
-        .map(res => res.json())
-        .subscribe(data => {
-          this.projects = data;console.log(data);
-        },
-        err => this.projects = []);
+    
   }
 
   getProjects(){
-    return Observable.of(this.projects);
+    if(this.projects != null){
+      return Observable.of(this.projects);
+    }else{
+      return this.http.get('../assets/projects.json')
+        .map(res => res.json())
+        .do((data) => {
+          this.projects = data;
+        });
+    }
   }
 
   getProjectById(id){
