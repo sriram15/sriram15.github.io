@@ -1,44 +1,35 @@
 [
     { 
     "id":0, 
-    "srcUrl": "http://lorempixel.com/400/200", 
-    "description": "Test description.....",
-    "category": "web", 
-    "title": "Title 1", 
-    "toolsUsed": ["Angular", "Test"],
+    "srcUrl": "../assets/living-room/living-room.jpg", 
+    "description": "3D render of the living room made in blender",
+    "category": "3d", 
+    "title": "Living Room", 
+    "toolsUsed": ["Blender"],
     "infoBlocks": [
-        {"imgUrl":"http://lorempixel.com/400/200", "content":"Content Goes here!!!"},
-        {"imgUrl":"http://lorempixel.com/400/200", "content":"Content Goes here!!!"},
-        {"content":"Content Goes here!!!"},
-        {"content":"Content Goes here!!!"}
+        {"imgUrl":"../assets/living-room/living-room.jpg", "content":"3D render of the living room made in blender"}
     ]
     },
     { 
     "id":1, 
-    "srcUrl": "http://lorempixel.com/400/200", 
-    "description": "Test description.....",
+    "srcUrl": "../assets/bicycle/bicycle_render.jpg", 
+    "description": "Render of dust covered bicycle",
     "category": "3d", 
-    "title": "Title 1", 
-    "toolsUsed": ["Angular", "Test"],
+    "title": "Bicycle", 
+    "toolsUsed": ["Blender"],
     "infoBlocks": [
-        {"imgUrl":"http://lorempixel.com/400/200", "content":"Content Goes here!!!"},
-        {"imgUrl":"http://lorempixel.com/400/200", "content":"Content Goes here!!!"},
-        {"content":"Content Goes here!!!"},
-        {"content":"Content Goes here!!!"}
+        {"imgUrl":"../assets/bicycle/bicycle-render.jpg", "content":"Render of dust covered bicycle"}
     ]
     },
     { 
     "id":2, 
-    "srcUrl": "http://lorempixel.com/400/200", 
-    "description": "Test description.....",
-    "category": "mobile", 
-    "title": "Title 1", 
-    "toolsUsed": ["Angular", "Test"],
+    "srcUrl": "../assets/carpe-model/carpe-model.png", 
+    "description": "Render of stylizhed character",
+    "category": "3d", 
+    "title": "Stylized Character", 
+    "toolsUsed": ["Blender"],
     "infoBlocks": [
-        {"imgUrl":"http://lorempixel.com/400/200", "content":"Content Goes here!!!"},
-        {"imgUrl":"http://lorempixel.com/400/200", "content":"Content Goes here!!!"},
-        {"content":"Content Goes here!!!"},
-        {"content":"Content Goes here!!!"}
+        {"imgUrl":"../assets/carpe-model/carpe-model.png", "content":"Render of stylizhed character"}
     ]
     },
     { 

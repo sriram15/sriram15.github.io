@@ -1,14 +1,14 @@
 <div class="main-wrapper">
   <div class="row">
-      <h4>Title</h4>
-      <h5>Web Project : Tools Used - Angular </h5>
+      <h4>{{project.title}}</h4>
+      <h5>{{project.toolsUsed}}</h5>
   </div>
   <div class="row-tile">
     <div *ngIf="side==='left'">
       <img [src]="project.srcUrl">
     </div>
     <div>
-      <p class="content">Vivamus maximus orci et tristique dictum. Duis arcu libero, tempus ac condimentum sit amet, egestas ut tellus. Sed rhoncus elit sed nisl aliquam, mollis facilisis nibh bibendum. Nunc dignissim venenatis pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut consectetur urna, facilisis consectetur mi. Integer et ante facilisis, facilisis purus sed, consequat sapien. Suspendisse cursus tempus ipsum vitae pulvinar. Mauris vitae lectus mi. Proin pellentesque ultricies lectus quis mollis.</p>
+      <p class="content">{{project.description}}</p>
     </div>
     <div *ngIf="side==='right'">
       <img [src]="project.srcUrl">
