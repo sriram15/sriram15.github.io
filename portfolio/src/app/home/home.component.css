@@ -1,7 +1,21 @@
-.carousel-caption{
+.carousel-caption-name{
+    position: absolute;
+    right: 15%;
     bottom: 70%;
+    left: 15%;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0,.6);
 }
+
+.headerImgs{
+    position: relative;
+}
+
 img{
-    height: 600px;
     width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
 }

@@ -1,8 +1,8 @@
-      <img src="../../assets/welcomeRender2.png" alt="BG 1">
-      <div class="carousel-caption">
-        <h3>I am Sriram</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
+
+<div class="headerImgs">
+    <img (mouseenter)="mouseEnter($event)" (mouseleave)="mouseLeave()" class="imgBase" src="../../assets/welcomeRenderBase.jpg" alt="BG 1">
+    <img *ngIf="showImg" class="imgText" src="../../assets/welcomeRenderIntroText.png" alt="BG 1">
+</div>
 
 <!--<div class="container">
     <h3>Project Highlights</h3>
@@ -16,4 +16,4 @@
     </carousel>
 </div>-->
 
-<app-portfolio></app-portfolio>
+<!--<app-portfolio></app-portfolio>-->
